@@ -1,0 +1,171 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    display: flex;
+    justify-content: center;
+}
+body{
+    width: 100vw;
+    height: 95vh;
+    padding: 2%;
+    margin: 3%;
+    display: flex;
+    justify-content:center ;
+    font-family: "Comic Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    /* background-color: blanchedalmond; */
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20201026/pngtree-leaves-shadow-on-cream-color-background-image_439017.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    margin-bottom: 10%;
+    padding: 5%;
+    font-size: 55px;
+    text-decoration: underline;
+    border: 1px solid rgba(252, 239, 239, 0.345);
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.707);
+    box-shadow: 8px 10px 8px 4px hsla(300, 5%, 16%, 0.784);
+    animation: round 5s linear ;
+}
+form{
+    width: 100%;
+    border: 2px solid rgba(251, 246, 246, 0.144);
+    border-radius: 15px;
+    padding: 3%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 10px 8px 4px hsla(300, 5%, 16%, 0.784);
+    background-color: rgba(235, 225, 225, 0.71);
+    animation: round 5ms linear ;
+}
+input{
+
+    align-self: center;
+    width: 90%;
+    height: 60%;
+}
+label{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 2%;
+}
+textarea{
+    align-self: center;
+    width: 90%;
+    height: 90%;
+}
+input,
+textarea {
+    text-align: center; /* Center both the placeholder and the typed text */
+    font-weight: bold;
+    box-shadow: 2px 5px 3px hsla(300, 5%, 16%, 0.784);
+    background-color: rgba(208, 203, 203, 0.521);
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 2%;
+    transition: 0.9s;
+}
+.button{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: space-around;
+
+}
+.Submit,.reset,a{
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+    font-size:small;
+    font-weight: 500;
+    /* background-color: rgba(170, 143, 196, 0.629); */
+    background-color:rgba(245, 245, 245, 0.773);
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    width: 50%;
+    height: 70%;
+    transition: 0.5s;
+}
+.Submit:hover,.reset:hover,a:hover{
+    background-color: black;
+    color: white;
+}
+a{
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 2%;
+    box-shadow: 2px 5px 3px hsla(300, 5%, 16%, 0.784);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+input:focus,textarea:focus{
+    box-shadow: 7px 7px 7px 7px hsla(300, 8%, 42%, 0.663);
+
+}
+
+@keyframes round{
+    0%{
+        box-shadow: -25px 4px 12px 3px  hsla(300, 8%, 42%, 0.663);
+    }
+    30%{
+        box-shadow: 2px 5px 3px hsla(300, 8%, 42%, 0.663);
+    }
+    50%{
+        box-shadow: 2px 5px 3px hsla(300, 8%, 42%, 0.663);
+    }
+    65%{
+        box-shadow: 2px 5px 3px hsla(300, 8%, 42%, 0.663);
+    }
+    75%{
+        box-shadow: 2px 5px 3px  hsla(300, 8%, 42%, 0.663);
+    }
+    85%{
+        box-shadow: 2px 5px 3px  hsla(300, 8%, 42%, 0.663);
+    }
+    95%{
+        box-shadow: 2px 5px 3px  hsla(300, 8%, 42%, 0.663);
+    }
+    100%{
+        box-shadow: 2px 5px 3px  hsla(300, 8%, 42%, 0.663);
+    }
+}
+/* ----------------------------------------------Media querie for normal sized tabs-------------------------------- */
+@media screen and (min-width:650px)
+{
+    body{
+        height: 100vh;
+        width: 90vw;
+        font-size:x-large;
+        margin: 0%;
+    }
+    form{
+        height: 100%;
+        width: 70%;
+        padding: 0%;
+        margin: 0%;
+        font-size: x-large;
+    }
+    h1{
+        margin: 2%;
+        padding: 3%;
+    }
+    input,textarea{
+        font-size: large;
+    }
+    .Submit,.reset,a{
+        font-size: large;
+    }
+}

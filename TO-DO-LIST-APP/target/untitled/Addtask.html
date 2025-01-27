@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Addtask.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Add Task</title>
+</head>
+<body>
+<form action="AddTask" method="post">
+
+    <h1>Task Details</h1>
+    <label for="TaskName">Enter Task :</label>
+    <input type="text" id="TaskName" name="TaskName" placeholder="Enter Task" required>
+    <br>
+    <br>
+    <label for="Description">Enter discription :</label>
+    <textarea name="Description" id="Description" placeholder="Discription of task" required></textarea>
+    <br>
+    <br>
+    <label for="date&time">Select Date :</label>
+    <input type="datetime-local" name="date&time" id="date&time" required>
+    <br>
+    <br>
+    <div class="button">
+        <input type="Submit" value="☑️Submit" class="Submit">
+        <input type="reset" name="reset" value="🚮Clear" class="reset">
+        <a href="index.jsp">⬅️Back</a>
+    </div>
+</form>
+</body>
+</html>

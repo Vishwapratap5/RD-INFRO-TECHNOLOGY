@@ -1,0 +1,376 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+    background-image: url("https://i.pinimg.com/736x/4f/98/ad/4f98ad4d433374cc805f90be45fe4afa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Header{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Logo{
+    padding: 5px;
+    font-size: x-large;
+    margin-right: 10px;
+    border:1px solid rgba(255, 255, 255, 0.047) ;
+    border-radius: 25px;
+    transition: 0.9s;
+}
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 50px;
+    gap: 10px;
+}
+.flet{
+    color: red;
+}
+a{
+
+    color: black;
+    border: 2px solid rgb(185, 128, 22);
+    border-radius: 25px;
+    margin: 2px;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 15px;
+    transition: 0.9s;
+    /* border-bottom:  2px solid red;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; */
+}
+a:hover{
+    color:white;
+    background-color: black;
+    text-decoration: underline;
+    box-shadow: 15px 15px 15px 10px hsla(300, 8%, 42%, 0.663);
+}
+.para:hover{
+    box-shadow: 15px 15px 15px 10px hsla(300, 8%, 42%, 0.663);
+}
+.bodyContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 55rem;
+}
+.para{
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.29);
+    box-shadow: 5px 2px 3px  rgb(174, 115, 46);
+    border-radius: 15px;
+    transition: 0.9s;
+}
+.txt{
+    color: rgb(169, 93, 93);
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.Para1{
+    width: 650px;
+    height: 650px;
+    font-family: "Comic Neue", serif;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: xx-large;
+}
+.Avtar{
+    width: 700px;
+    margin: 5px;
+    padding: 5px;
+}
+.img{
+    width: 100%;
+    animation: Appear 5s linear;
+    transition: 9s;
+}
+.DateTime{
+    padding: 15px;
+    margin-left: 50px;
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+    color: rgb(174, 115, 46);
+    width: 300px;
+    border: 2px solid white;
+    box-shadow: 5px 2px 3px  rgb(174, 115, 46);
+    border-radius: 23px;
+    transition: 0.2s;
+}
+.DateTime:hover{
+    box-shadow: 15px 15px 15px 10px hsla(300, 8%, 42%, 0.663);
+}
+.Logo:hover{
+    box-shadow: 15px 15px 15px 10px hsla(300, 8%, 42%, 0.663);
+}
+
+Footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes Appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+footer .FLogo h2 {
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+
+footer .contact, footer .Follow {
+    margin: 10px 0;
+}
+
+footer h4, footer h3 {
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 10px;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* -----------------------------------------------------------Media Queries for big tab------------------------------------------------ */
+@media screen and (max-width: 1060px) {
+    .DateTime {
+        width: 200px;
+        font-size: medium; /* Adjusts the font size for smaller screens */
+        padding: 25px;
+    }
+
+}
+/* -----------------------------------------------------------Media Queries for medium tab------------------------------------------------ */
+
+@media Screen and (max-width:985px){
+    .Follow {
+        font-size: small;
+        padding: 2px;
+    }
+    footer .contact{
+        font-size: small;
+    }
+    footer h4, footer h3 {
+        font-weight: 300;
+        font-size: small;
+        margin: 5px 0;
+    }
+    .Para1 {
+        width: 550px;
+        height: 550px;
+    }
+    .para {
+        font-size: large;
+    }
+
+    .a1,.a2,.a3{
+        font-size: small;
+        width: 15px;
+        padding: 5px;
+    }
+}
+/* -----------------------------------------------------------Media Queries for small tab ----------------------------------------------- */
+@media Screen and (max-width:806px){
+    .a1,.a2,.a3{
+        display: block;
+        width: 100px;
+        margin-bottom: 3px;
+    }
+
+    .tabs{
+        font-size: small;
+        padding: 3px;
+        margin: 2px;
+    }
+    Footer{
+        height: 170px;
+    }
+    .contact{
+        width: 210px;
+        text-align: justify;
+    }
+}
+/* -----------------------------------------------------------Media Queries for  Mobile phones------------------------------------------------ */
+@media screen and (max-width: 566px) {
+
+    body {
+        background-color: rgb(252, 240, 244);
+        background-image: none;
+        font-size: small;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Header {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .Logo {
+        padding: 2%;
+        margin: 1%;
+        text-align: center;
+        font-size: large;
+        border: 1px solid rgba(255, 255, 255, 0.67);
+    }
+
+    .tabs {
+        margin: 0;
+        font-size: small;
+        gap: 5px;
+    }
+
+    a {
+        padding: 4px 8px;
+        font-size: small;
+        width: auto;
+        text-align: center;
+    }
+
+    .bodyContent {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 5px;
+        margin: 0;  /* Removed margin */
+        padding: 0;  /* Removed padding */
+        justify-content: center;
+        height: 500px;
+    }
+
+    .Para1 {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        font-size: medium;
+        margin: 0;  /* Removed margin */
+        padding: 0;  /* Removed padding */
+    }
+
+    .para {
+        padding: 8px;
+        font-size: small;
+        color: rgb(174, 115, 46);
+        width: 90%;
+        border: 2px solid white;
+        box-shadow: 3px 2px 3px rgb(174, 115, 46);
+        border-radius: 20px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .txt {
+        visibility: visible;
+        font-size: large;
+    }
+
+    .hide1, .hide2 {
+        display: none;
+    }
+
+    .Avtar {
+        margin: 0; /* Removed margin from avatar */
+        padding: 0; /* Removed padding from avatar */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img {
+        width: 75%;
+        max-width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* DateTime adjustments */
+    .DateTime {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        font-size: small;
+        margin-bottom: 5px;
+        margin-right: 15%;
+    }
+
+    /* Footer adjustments */
+    Footer {
+        height: auto;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        padding: 5px 0;  /* Reduced padding to reduce the gap */
+        margin-top: 10px;  /* Adjust margin to control distance from body content */
+        height: 60%;
+        width: 100%;
+    }
+
+    .FLogo {
+        font-size: medium;
+    }
+
+    .contact, .Follow {
+        width: 90%;
+        margin: 5px 0;
+        text-align: center;
+    }
+    .Follow{
+        display: flex;
+        width: 90%;
+    }
+    footer h4, footer h3 {
+        font-weight: 400;
+        font-size: small;
+        margin: 3px 0;
+    }
+
+    footer a {
+        font-size: small;
+        margin: 3px;
+        display: inline-block;
+        text-align: center;
+        padding: 2px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+}
+
